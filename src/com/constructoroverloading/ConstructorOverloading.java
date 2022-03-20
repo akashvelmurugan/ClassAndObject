@@ -11,6 +11,7 @@ public class ConstructorOverloading {
 	public ConstructorOverloading(String employeeName) {
 		name=employeeName;
 		System.out.println("NoParameteraisedConstructor"+employeeName);
+		
 	}	
 	public ConstructorOverloading(String employeeName,int employeeAge) {
 		name=employeeName;
@@ -22,5 +23,7 @@ public class ConstructorOverloading {
 		ConstructorOverloading constructorOverloadingDefault = new ConstructorOverloading();
 		ConstructorOverloading constructorOverloadingPerametereised = new ConstructorOverloading("Saravanan");		
 		ConstructorOverloading constructorOverloadingPerametereisedOne = new ConstructorOverloading("Saravanan Saravanan", 27);
+	
+	System.out.println(constructorOverloadingPerametereised.age);
 	}
 }
